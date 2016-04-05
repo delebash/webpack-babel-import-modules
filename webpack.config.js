@@ -3,7 +3,7 @@ const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/myfoundation.js',
+  entry: './src/materialdesignlite.js',
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js'
@@ -38,6 +38,9 @@ module.exports = {
         { test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url', query: { limit: 10000, mimetype: 'application/font-woff' } },
         { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file' },
         { test: /\.scss$/, loader: 'style!css?sourceMap!postcss!sass?sourceMap'},
+       { test: /\.js$/, loader: 'exports-loader' }
+      // { test: require.resolve("material-design-lite/material"), loader: "exports?componentHandler" }
+
     ]
   }
 };
