@@ -1,9 +1,7 @@
-import $ from 'jquery'
 import bootstrap from 'bootstrap'
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import '../styles/styles.css'
+import '../styles/bootstrap.css'
 
 $(document).ready(function () {
-   // console.log('here')
-    //  (document).foundation()
+   console.log('bootstrap loaded')
 });
