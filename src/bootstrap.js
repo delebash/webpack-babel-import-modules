@@ -1,6 +1,5 @@
-import bootstrap from 'bootstrap'
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import '../styles/bootstrap.css'
+import bootstrap from 'bootstrap'
 
 $(document).ready(function () {
    console.log('bootstrap loaded')
